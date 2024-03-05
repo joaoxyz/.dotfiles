@@ -69,9 +69,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
-plugins=(zsh-nvm git fzf zsh-syntax-highlighting) 
+plugins=(git fzf zsh-syntax-highlighting) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,6 +105,6 @@ alias sudo="sudo "
 alias jn="jupyter notebook"
 alias sml="rlwrap mosml"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# fnm
+export PATH="/home/joao/.local/share/fnm:$PATH"
+eval "`fnm env`"
