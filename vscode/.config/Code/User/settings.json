@@ -1,0 +1,30 @@
+{
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDelete": false,
+    "extensions.ignoreRecommendations": true,
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "haskell.manageHLS": "GHCup",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "sml-environment-interpreter-path": "/usr/bin/mosml",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "security.workspace.trust.startupPrompt": "never",
+    "security.workspace.trust.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "update.showReleaseNotes": false,
+    "editor.fontFamily": "'IBM Plex Mono', 'monospace', monospace",
+    "jupyter.askForKernelRestart": false,
+    "workbench.sideBar.location": "right",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "files.autoSave": "onFocusChange",
+    "workbench.editor.enablePreview": false
+}
