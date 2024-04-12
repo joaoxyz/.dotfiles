@@ -8,5 +8,6 @@
 	pager = less -XFR
 	editor = code --wait
 	excludesfile = /home/joao/.config/git/ignore
+	ignorecase = false
 [color]
 	ui = auto
