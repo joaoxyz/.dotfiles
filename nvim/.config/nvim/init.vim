@@ -1,5 +1,7 @@
 set hlsearch " highlight search
+set expandtab " replace tabs with spaces
 set shiftwidth=4 " autoindend width
+set tabstop=4 " 4 spaces sized tabs
 set autoindent " indent a new line the same amount as the line just typed
 filetype plugin indent on
 syntax on
@@ -12,5 +14,3 @@ set scrolloff=3 " always display lines below the cursor
 :  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
 :  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
 :augroup END
-
-

@@ -1,13 +1,15 @@
 [user]
-	name = joaoxyz
+	name = joaoxyz 
 	email = jpreis808@gmail.com
 [init]
 	defaultBranch = main
 [core]
 	autocrlf = input
 	pager = less -XFR
-	editor = code --wait
+	editor = nvim
 	excludesfile = /home/joao/.config/git/ignore
 	ignorecase = false
 [color]
 	ui = auto
+[push]
+	autoSetupRemote = true
