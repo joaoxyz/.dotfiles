@@ -2,8 +2,8 @@
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "explorer.confirmDelete": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "auto",
+    "explorer.confirmDelete": true,
     "extensions.ignoreRecommendations": true,
     "[html]": {
         "editor.tabSize": 2
@@ -12,19 +12,25 @@
     "editor.minimap.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "haskell.manageHLS": "GHCup",
-    "workbench.colorTheme": "Gruvbox Dark Medium",
-    "sml-environment-interpreter-path": "/usr/bin/mosml",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "[python]": {
         "editor.formatOnType": true
     },
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.enabled": false,
-    "redhat.telemetry.enabled": false,
     "update.showReleaseNotes": false,
     "editor.fontFamily": "'IBM Plex Mono', 'monospace', monospace",
     "jupyter.askForKernelRestart": false,
     "workbench.sideBar.location": "right",
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "files.autoSave": "onFocusChange",
-    "workbench.editor.enablePreview": false
+    "files.autoSave": "afterDelay",
+    "workbench.editor.enablePreview": false,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0 }",
+    "editor.renderWhitespace": "boundary",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "python.analysis.diagnosticMode": "workspace",
+    "window.titleBarStyle": "custom",
+    "editor.fontLigatures": false
 }
