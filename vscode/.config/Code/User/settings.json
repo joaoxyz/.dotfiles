@@ -36,5 +36,6 @@
     // "editor.fontSize": 15,
     "update.mode": "none",
     "chat.commandCenter.enabled": false,
-    "workbench.editor.focusRecentEditorAfterClose": false
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "editor.dragAndDrop": false
 }

@@ -1,13 +1,13 @@
 [user]
-	name = joaoxyz 
+	name = joaoxyz
 	email = jpreis808@gmail.com
 [init]
 	defaultBranch = main
 [core]
 	autocrlf = input
-	pager = less -XFR
+	pager = less -Fr
 	editor = nvim
-	excludesfile = /home/joao/.config/git/ignore
+	excludesfile = $HOME/.config/git/ignore
 	ignorecase = false
 [color]
 	ui = auto
