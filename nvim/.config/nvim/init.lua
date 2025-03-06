@@ -22,6 +22,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
@@ -33,9 +34,9 @@ vim.opt.splitbelow = true
 require("lazy").setup({
   spec = {
     {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
+      'nvim-lualine/lualine.nvim',
+      dependencies = { 'nvim-tree/nvim-web-devicons' },
+      config = function()
         require("lualine").setup {
           options = {
             theme = 'gruvbox-material',
@@ -45,25 +46,41 @@ require("lazy").setup({
         }
     end,  
     },
-    'tpope/vim-sleuth',
     {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    config = function () 
-      local configs = require("nvim-treesitter.configs")
-      configs.setup({
+      'catppuccin/nvim', 
+      lazy = false,
+      name = 'catppuccin', 
+      priority = 1000,
+      config = function() 
+        vim.cmd.colorscheme "catppuccin-mocha"
+      end,
+    },
+    {
+      "nvim-treesitter/nvim-treesitter",
+      build = ":TSUpdate",
+      config = function () 
+        local configs = require("nvim-treesitter.configs")
+        configs.setup({
           ensure_installed = { "lua", "vimdoc", "c", "rust", "python", "javascript", "html", "css", "bash", "sql" },
           sync_install = false,
           highlight = { enable = true },
           indent = { enable = true },  
         })
-    end,
+      end,
     },
+    'tpope/vim-sleuth',
+    'numToStr/Comment.nvim',
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "catppuccin-mocha" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { 
+    enabled = true,
+    notify = false
+  },
+  rocks = {
+    enabled = false,
+  }
 })
 
