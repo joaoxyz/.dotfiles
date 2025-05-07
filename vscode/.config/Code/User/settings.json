@@ -33,9 +33,13 @@
     "python.analysis.diagnosticMode": "workspace",
     "window.titleBarStyle": "custom",
     "editor.fontLigatures": false,
-    // "editor.fontSize": 15,
+    "editor.fontSize": 15,
     "update.mode": "none",
     "chat.commandCenter.enabled": false,
     "workbench.editor.focusRecentEditorAfterClose": false,
-    "editor.dragAndDrop": false
+    "editor.dragAndDrop": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "rust-analyzer.lens.enable": false,
+    "vscode-neovim.neovimClean": true,
+    "files.trimTrailingWhitespace": true
 }
