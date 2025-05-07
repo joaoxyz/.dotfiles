@@ -29,6 +29,7 @@ vim.opt.tabstop = 4
 vim.opt.scrolloff = 5
 vim.opt.splitright = true
 vim.opt.splitbelow = true 
+-- vim.opt.autowriteall = true 
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -47,12 +48,11 @@ require("lazy").setup({
     end,  
     },
     {
-      'catppuccin/nvim', 
+      'ellisonleao/gruvbox.nvim', 
       lazy = false,
-      name = 'catppuccin', 
       priority = 1000,
       config = function() 
-        vim.cmd.colorscheme "catppuccin-mocha"
+        vim.cmd.colorscheme "gruvbox"
       end,
     },
     {
@@ -73,7 +73,7 @@ require("lazy").setup({
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "catppuccin-mocha" } },
+  install = { colorscheme = { "gruvbox" } },
   -- automatically check for plugin updates
   checker = { 
     enabled = true,
