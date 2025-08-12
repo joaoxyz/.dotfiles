@@ -6,7 +6,8 @@
     "explorer.confirmDelete": true,
     "extensions.ignoreRecommendations": true,
     "[html]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
@@ -41,5 +42,8 @@
     "python.analysis.typeCheckingMode": "standard",
     "rust-analyzer.lens.enable": false,
     "vscode-neovim.neovimClean": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
