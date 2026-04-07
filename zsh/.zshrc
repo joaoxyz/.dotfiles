@@ -120,6 +120,11 @@ eval "`fnm env`"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export SDL2_DIR=/opt/SDL2
+export CMAKE_PREFIX_PATH=$SDL2_DIR:$CMAKE_PREFIX_PATH
+export PKG_CONFIG_PATH=$SDL2_DIR/lib/pkgconfig:$PKG_CONFIG_PATH
+export LD_LIBRARY_PATH=$SDL2_DIR/lib:$LD_LIBRARY_PATH
+
 # bun completions
 [ -s "/home/joao/.bun/_bun" ] && source "/home/joao/.bun/_bun"
 
@@ -127,6 +132,5 @@ eval "`fnm env`"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# opencode
+export PATH=/home/joao/.opencode/bin:$PATH

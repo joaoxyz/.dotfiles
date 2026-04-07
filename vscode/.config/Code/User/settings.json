@@ -46,4 +46,5 @@
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     }
+    "C_Cpp.default.compilerPath": "",
 }
